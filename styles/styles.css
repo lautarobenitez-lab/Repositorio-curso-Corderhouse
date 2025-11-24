@@ -1,0 +1,381 @@
+/*selector + propiedad con valor*/ 
+main{
+  background-color:#ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #D62828 ;
+  padding: 10px 20px; /* espacio alrededor */
+}
+
+/*parrafos dentro del main*/
+main p{ 
+    font-size: 18px;
+    color: #000000;
+    background-color: #F5F5F5;
+}
+
+
+/*header*/
+/*header con logo arriba y nav abajo*/
+header{
+  display: flex;
+  flex-direction: column; /* coloca logo arriba y nav abajo */
+  background-color: #ff0000;
+  color: white ;
+  padding: 10px 20px; /* espacio alrededor */
+}
+
+/*links dentro del header color blanco y sin subrayado*/
+header a:hover{
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+/*links dentro del header color blanco y sin subrayado*/
+header a:focus-visible{
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+/*nav con logo a la izquierda y lista a la derecha*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+/*nav centrado*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none; /*quita los puntos de las listas*/
+  gap: 40px;
+  margin-top: 10px; /* espacio entre logo y menú */
+  padding: 10px;
+  font-weight: 1000
+}
+
+/*logo imagen y texto alineados*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre la imagen y el texto */
+  justify-content: flex-start;
+}
+
+/*logo tamaño*/
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/*general*/
+/*títulos h1 centrado y en mayúsculas*/
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*links color blanco y sin subrayado*/
+a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+
+
+/*links dentro del main color negro y subrayado*/
+main a{
+    color: #000000;
+    text-decoration: underline;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+
+
+/*inicio*/
+.actividades_inicio {
+  display: flex;
+  justify-content:center; /* centra horizontalmente */
+  padding: 20px;
+}
+
+/*lista actividades en fila*/
+.actividades_inicio ul {
+  display: flex;
+  list-style: none; /*quita los puntos de las listas*/
+  gap: 170px; /* espacio entre ellos */
+  padding: 20px 10px; 
+}
+
+/* estilo del listado. button y h3 centrados*/
+.actividades_inicio li {
+  background-color: #F5F5F5;
+  text-align: center; 
+  text-transform: uppercase;  
+  padding: 10px;
+}
+
+.actividades_inicio img {
+  width:300px;
+  height:300px;
+}
+
+
+.actividades_inicio a {
+  align-items: center; 
+}
+
+
+
+/*contacto*/
+/*botones de los forms*/
+.forms{
+    background-color: rgb(200, 220, 240);
+    border: #ffffff 2px solid;
+    color: #D62828;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*etiquetas del forms de contacto*/
+.formContacto label{ 
+    font-weight: 1000;
+    color: #000000;
+}
+
+
+
+/*actividades*/
+/*lista actividades en bloque*/
+.actividades {
+  display: flex;
+  justify-content:center; /* centra horizontalmente */
+  padding: 20px;
+}
+
+/*lista actividades en fila*/
+.actividades ul {
+  display: flex;
+  list-style: none; /*quita los puntos de las listas*/
+  justify-content:center; /* centra horizontalmente */
+  flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
+  gap: 170px; /* espacio entre ellos */
+}
+
+
+.actividades li {
+  background-color: #F5F5F5;
+  border: #F5F5F5 5px solid;
+
+}
+
+.actividades img {
+  width:250px;
+  height:200px;
+  border: #ffffff 5px solid;
+}
+
+/*títulos debajo de cada imagen*/
+.actividades h3 {
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+
+
+
+/*historia*/
+/*sede vieja tamaño de imagen*/
+#sedeVieja{
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre la imagen y el texto */
+}
+
+#sedeVieja img{
+  width: 400px;
+  height: 300px;
+  padding: 0; /* espacio arriba y abajo */
+  border:#F5F5F5 5px solid;
+}
+
+/*sede nueva tamaño de imagen*/
+#sedeNueva{
+  display: flex;
+  justify-content: flex-end ; /* alinea a la derecha */
+  align-items: center;
+  gap: 10px; /* espacio entre la imagen y el texto */
+}
+
+#sedeNueva img{ 
+  width: 400px;
+  height: 300px;
+  border:#F5F5F5 5px solid;
+}
+
+
+
+/*socios*/
+/*beneficios color negro*/
+.beneficios{
+  color: #000000;
+
+}
+
+
+
+/*footer*/
+/*footer color de fondo*/
+footer{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+  padding: 10px 20px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+/*estilo redes sociales en el footer*/
+.redes {
+  display: flex;
+  gap: 20px;              /* espacio entre los íconos */
+  padding: 10px;
+  justify-content:end; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+}
+
+/*iconos de redes sociales tamaño*/
+.redes img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+/*adaptación mobile*/
+@media (max-width: 600px){
+
+  /*nav centrado*/
+  nav ul {
+  display: flex;
+  list-style: none; /*quita los puntos de las listas*/
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 0px; /* espacio entre logo y menú */
+  padding: 10px;
+  font-weight: 1000
+  }
+
+  
+
+  .actividades {
+    display: flex;
+    justify-content:center;
+    padding: 5px;
+  }
+
+  /*lista actividades en fila*/
+  .actividades ul {
+    display: flex;
+    list-style: none; /*quita los puntos de las listas*/
+    justify-content:center; 
+    flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
+    font-size: small;
+  }
+
+  .actividades li p {
+    font-size: smaller;
+  } 
+
+  .actividades img {
+    width:100px;
+    height:80px;
+    border: #ffffff 2px solid;
+  }
+
+
+  /*redes footer*/
+  .redes {
+    display: flex;
+    gap: 20px;              /* espacio entre los íconos */
+    padding: 10px;
+    justify-content:flex-start; 
+    align-items: center;     /* centra verticalmente */
+  }
+
+  /*iconos de redes sociales tamaño*/
+  .redes img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+@media (max-width: 800px){
+
+  /*nav centrado*/
+  nav ul {
+  display: flex;
+  list-style: none; /*quita los puntos de las listas*/
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 0px; /* espacio entre logo y menú */
+  padding: 10px;
+  font-weight: 1000
+  }
+
+  
+
+  .actividades {
+    display: flex;
+    justify-content:center;
+    padding: 5px;
+  }
+
+  /*lista actividades en fila*/
+  .actividades ul {
+    display: flex;
+    list-style: none; /*quita los puntos de las listas*/
+    justify-content:center; 
+    flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
+    font-size: small;
+  }
+
+  .actividades li p {
+    font-size: smaller;
+  } 
+
+  .actividades img {
+    width:100px;
+    height:80px;
+    border: #ffffff 2px solid;
+  }
+
+
+  /*redes footer*/
+  .redes {
+    display: flex;
+    gap: 20px;              /* espacio entre los íconos */
+    padding: 10px;
+    justify-content:flex-start; 
+    align-items: center;     /* centra verticalmente */
+  }
+
+  /*iconos de redes sociales tamaño*/
+  .redes img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
