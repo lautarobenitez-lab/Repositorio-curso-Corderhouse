@@ -21,10 +21,8 @@ header a:focus-visible{
 }
 
 /*nav con logo a la izquierda y lista a la derecha*/
-.menuNav {
+.menuNav, .nav-link {
   display: flex;
-  justify-content: flex-end;
-  padding: 0 10px;
   background-color: #ff0000;
   color: rgb(255, 255, 255);
 }
@@ -36,6 +34,27 @@ nav ul {
   padding: 10px;
   font-weight: 1000
 }
+
+.navCol {
+  display: flex;
+  flex-direction: column; /* ahora hay filas, no todo en una */
+}
+
+.menuDerecha {
+  align-self: flex-end;   /* lo manda a la derecha */
+  margin-top: 1rem;        /* lo baja una línea */
+}
+
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* vuelve todo a la izquierda */
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+}
+
 
 /*logo imagen y texto alineados*/
 .logo {
