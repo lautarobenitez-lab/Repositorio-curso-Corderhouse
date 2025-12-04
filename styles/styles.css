@@ -35,21 +35,22 @@ nav ul {
   font-weight: 1000
 }
 
+/*nav columna*/
 .navCol {
-  display: flex;
-  flex-direction: column; /* ahora hay filas, no todo en una */
+  flex-direction: column; 
 }
 
+/*menu alineado a la derecha*/
 .menuDerecha {
-  align-self: flex-end;   /* lo manda a la derecha */
-  margin-top: 1rem;        /* lo baja una línea */
+  align-self: flex-end;   
+  margin-top: 1rem;        
 }
 
-
+/*box que contiene logo y h2 alineados a la izquierda*/
 .box {
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* vuelve todo a la izquierda */
+  justify-content: flex-start; 
   align-items: center;
   text-align: left;
   gap: 1rem;
@@ -77,12 +78,6 @@ nav ul {
 h1{
     text-transform: uppercase;
     text-align: center;
-}
-
-/*links color blanco y sin subrayado*/
-a{
-    text-decoration:none;
-    color: rgb(255, 255, 255);
 }
 
 
