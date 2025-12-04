@@ -183,7 +183,10 @@ main a:hover{
   text-transform: uppercase;
 }
 
-
+.botonCentrado {
+  display: flex;
+  justify-content: center;
+}
 
 
 /*historia*/
