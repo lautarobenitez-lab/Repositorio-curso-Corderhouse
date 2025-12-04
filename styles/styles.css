@@ -13,17 +13,6 @@ main p{
     background-color: #F5F5F5;
 }
 
-
-/*header*/
-/*header con logo arriba y nav abajo*/
-header{
-  display: flex;
-  flex-direction: column; /* coloca logo arriba y nav abajo */
-  background-color: #ff0000;
-  color: white ;
-  padding: 10px 20px; /* espacio alrededor */
-}
-
 /*links dentro del header color blanco y sin subrayado*/
 header a:hover{
   text-decoration: underline;
@@ -37,10 +26,12 @@ header a:focus-visible{
 }
 
 /*nav con logo a la izquierda y lista a la derecha*/
-nav {
+.menuNav {
   display: flex;
   justify-content: flex-end;
   padding: 0 10px;
+  background-color: #ff0000;
+
 }
 
 /*nav centrado*/
