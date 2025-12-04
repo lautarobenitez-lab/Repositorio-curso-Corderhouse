@@ -13,13 +13,8 @@ main p{
     background-color: #F5F5F5;
 }
 
-/*links dentro del header color blanco y sin subrayado*/
-header a:hover{
-  text-decoration: underline;
-  color: rgb(0, 0, 0);
-}
 
-/*links dentro del header color blanco y sin subrayado*/
+header a:hover, 
 header a:focus-visible{
   text-decoration: underline;
   color: rgb(0, 0, 0);
@@ -31,14 +26,11 @@ header a:focus-visible{
   justify-content: flex-end;
   padding: 0 10px;
   background-color: #ff0000;
-
+  color: rgb(255, 255, 255);
 }
 
 /*nav centrado*/
 nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none; /*quita los puntos de las listas*/
   gap: 40px;
   margin-top: 10px; /* espacio entre logo y menú */
   padding: 10px;
@@ -49,7 +41,7 @@ nav ul {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* espacio entre la imagen y el texto */
+  margin: 10px;
   justify-content: flex-start;
 }
 
