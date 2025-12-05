@@ -71,24 +71,29 @@
         <a href="clubcayfa@gmail.com" target="_blank">clubcayfa@gmail.com</a>
     
         <h2>Whatsapp</h2>
-        <p>Para consultas rápidas, podés enviarnos un mensaje al siguiente número de WhatsApp: <strong>54 9 3533476075</strong>. Estamos disponibles de lunes a viernes, de 08:00 a 13:00 horas.</p>
-
+        <p>Para consultas rápidas, podés enviarnos un mensaje al siguiente número de WhatsApp: 
+            <strong>54 9 3533476075</strong>. Estamos disponibles de lunes a viernes, de 08:00 a 13:00 horas.
+        </p>
 
         <!--Formulario-->
         <h2>Formulario de contacto</h2>
         <form class="formContacto" action="/submit" method="post">
-            <label for="name">Nombre</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
 
-            <label for="email">Correo electrónico</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Mensaje</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-            <input class="forms" type="submit" value="enviar"> <br>
+            <input class="forms" type="submit" value="Enviar">
         </form>
-
+        
     </main>
 
     <footer>
@@ -96,7 +101,7 @@
             <label for="email">Dejanos tu contacto y hacete socio</label> 
             <input type="email" name="email" id="email" placeholder="email">
 
-            <input class="forms" type="button" value="enviar">
+            <input class="forms" type="button" value="Enviar">
 
         </form> <br>
 
