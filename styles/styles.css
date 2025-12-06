@@ -288,31 +288,38 @@ footer form {
     width: 50%;
     height: 50%;
   }
-  
-  .actividades {
-    display: flex;
-    justify-content:center;
-    padding: 5px;
+
+    /*inicio*/
+  .actividades_inicio img {
+    width: 75%;
+    height: 75%;
+  }
+  .actividades_inicio ul {
+    gap: 100px; /* menos espacio entre ellos */
+    justify-content: center;
   }
 
-  /*lista actividades en fila*/
-  .actividades ul {
-    display: flex;
-    list-style: none; /*quita los puntos de las listas*/
-    justify-content:center; 
-    flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-    font-size: small;
+  .actividades_inicio ul li:nth-child(3) {
+    display: none; /* Oculto la tercera */
   }
 
-  .actividades li p {
-    font-size: smaller;
-  } 
 
+  /*actividades*/
+   .actividades ul {
+    gap: 40px;
+  }
+
+  /* 2 tarjetas por fila */
+  .actividades li {
+    width: 45%;
+  }
+
+  /* que las imágenes se adapten al li */
   .actividades img {
-    width:100px;
-    height:80px;
-    border: #ffffff 2px solid;
+    width: 100%;
+    height: auto;
   }
+
 
 
   /*redes footer*/
