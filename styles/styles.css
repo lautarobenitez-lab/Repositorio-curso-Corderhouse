@@ -67,8 +67,8 @@ nav ul {
 
 /*logo tamaño*/
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 
@@ -263,79 +263,32 @@ footer form {
 
 
 /*adaptación mobile*/
-@media (max-width: 600px){
-
-  /*nav centrado*/
-  nav ul {
-  display: flex;
-  list-style: none; /*quita los puntos de las listas*/
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 0px; /* espacio entre logo y menú */
-  padding: 10px;
-  font-weight: 1000
-  }
-
-  
-
-  .actividades {
-    display: flex;
-    justify-content:center;
-    padding: 5px;
-  }
-
-  /*lista actividades en fila*/
-  .actividades ul {
-    display: flex;
-    list-style: none; /*quita los puntos de las listas*/
-    justify-content:center; 
-    flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-    font-size: small;
-  }
-
-  .actividades li p {
-    font-size: smaller;
-  } 
-
-  .actividades img {
-    width:100px;
-    height:80px;
-    border: #ffffff 2px solid;
-  }
-
-
-  /*redes footer*/
-  .redes {
-    display: flex;
-    gap: 20px;              /* espacio entre los íconos */
-    padding: 10px;
-    justify-content:flex-start; 
-    align-items: center;     /* centra verticalmente */
-  }
-
-  /*iconos de redes sociales tamaño*/
-  .redes img {
-    width: 20px;
-    height: 20px;
-  }
-
-}
-
 @media (max-width: 800px){
 
   /*nav centrado*/
   nav ul {
-  display: flex;
-  list-style: none; /*quita los puntos de las listas*/
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 0px; /* espacio entre logo y menú */
-  padding: 10px;
-  font-weight: 1000
+    gap: 20px;
+    margin-top: 10px; /* espacio entre logo y menú */
+    padding: 10px;
+    font-weight: 1000;
   }
 
-  
 
+  .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo { 
+    margin: 5px;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 50%;
+    height: 50%;
+  }
+  
   .actividades {
     display: flex;
     justify-content:center;
