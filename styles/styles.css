@@ -128,9 +128,16 @@ main a:hover{
 }
 
 .noticias {
-  padding: 40px;
   text-align: center;
+  padding: 20px;
 }
+
+.noticias h2 {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
 
 .contenedor-noticias {
   display: flex;
