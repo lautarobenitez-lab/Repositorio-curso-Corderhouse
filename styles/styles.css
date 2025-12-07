@@ -299,7 +299,7 @@ footer form {
 
 
 
-/*adaptación mobile*/
+/*adaptación tablet*/
 @media (max-width: 800px){
 
   /*nav centrado*/
@@ -386,6 +386,103 @@ footer form {
   .redes img {
     width: 20px;
     height: 20px;
+  }
+
+}
+
+/*adaptación mobile*/
+@media (max-width: 576px) {
+
+  /* NAV */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 60%;
+    height: auto;
+  }
+
+  /* INICIO */
+  .actividades_inicio img {
+    width: 100%;
+    height: auto;
+  }
+
+  .actividades_inicio ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Ocultamos solo si aún querés */
+  .actividades_inicio ul li:nth-child(3) {
+    display: none;
+  }
+
+  /* NOTICIAS */
+  .contenedor-noticias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-noticia {
+    width: 95%;
+  }
+
+  .card-noticia img {
+    height: 160px;
+  }
+
+
+  /* ACTIVIDADES */
+  .actividades ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* 1 tarjeta por fila */
+  .actividades li {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .redes {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .redes img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* SECCIONES HISTORIA */
+  #sedeVieja,
+  #sedeNueva{
+    flex-direction: column;   /* imagen arriba, texto abajo */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* IMÁGENES */
+  #sedeVieja img,
+  #sedeNueva img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* TEXTO */
+  #sedeVieja p,
+  #sedeNueva p{
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 5px;
   }
 
 }
