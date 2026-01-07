@@ -2,13 +2,12 @@
 @use "./base/reset";
 @use "./base/base";
 
+@use "./components/forms";
+@use "./components/botones";
+
 @use "./layout/footer";
 @use "./layout/header";
 @use "./layout/nav";
-
-
-@use "./components/forms";
-@use "./components/botones";
 
 @use "./pages/actividades";
 @use "./pages/historia";
