@@ -1,7 +1,7 @@
 header a:hover, 
 header a:focus-visible{
     text-decoration: underline;
-    color: rgb(0, 0, 0);
+    color: $body-font-color;
 }
 
 /*box que contiene logo y h2 alineados a la izquierda*/
