@@ -10,13 +10,22 @@ main{
   font-family: "Roboto", sans-serif;
   color: #D62828 ;
   padding: 10px 20px; /* espacio alrededor */
-}
 
-/*parrafos dentro del main*/
-main p{ 
+  p{  /*parrafos dentro del main*/
     font-size: 18px;
     color: #000000;
     background-color: #F5F5F5;
+  }
+
+  a{ /*links dentro del main color negro y subrayado*/
+    color: #000000;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: underline;
+      color: rgb(255, 0, 0);
+    }
+  }
+
 }
 
 
@@ -69,12 +78,11 @@ nav ul {
   align-items: center;
   margin: 10px;
   justify-content: flex-start;
-}
 
-/*logo tamaño*/
-.logo img {
-  width: 100px;
-  height: 100px;
+  img {         /*logo tamaño*/
+    width: 100px;
+    height: 100px;
+  }
 }
 
 
@@ -87,69 +95,56 @@ h1{
 }
 
 
-/*links dentro del main color negro y subrayado*/
-main a{
-    color: #000000;
-    text-decoration: underline;
-}
-
-main a:hover{
-    text-decoration: underline;
-    color: rgb(255, 0, 0);
-}
-
-
 
 /*inicio*/
 .actividades_inicio {
   display: flex;
   justify-content:center; /* centra horizontalmente */
   padding: 20px;
-}
 
-/*lista actividades en fila*/
-.actividades_inicio ul {
-  display: flex;
-  list-style: none; /*quita los puntos de las listas*/
-  gap: 2rem; /* espacio entre ellos */
-  padding: 20px 10px; 
-}
+  ul {                /*lista actividades en fila*/
+    display: flex;
+    list-style: none; /*quita los puntos de las listas*/
+    gap: 2rem; /* espacio entre ellos */
+    padding: 20px 10px; 
+  }
 
-/* estilo del listado. button y h3 centrados*/
-.actividades_inicio li {
-  background-color: #F5F5F5;
-  text-align: center; 
-  text-transform: uppercase;  
-  padding: 10px;
-}
+  li {         /*estilo del listado. button y h3 centrados*/  
+    background-color: #F5F5F5;
+    text-align: center; 
+    text-transform: uppercase;  
+    padding: 10px;
+  }
 
-.actividades_inicio img {
+  img {
     width: 100%;
     height: 200px;      /* todas mismo alto */
     object-fit: cover;  /* recorta sin deformar */
     border-radius: 10px;
-}
+  }
 
+  a {
+    display: flex;
+    align-items: center; 
+  }
 
-.actividades_inicio a {
-  align-items: center; 
-}
+  h3 {
+    margin-top: 12px;
+  }
 
-.actividades_inicio h3 {
-  margin-top: 12px;
 }
 
 
 .noticias {
   text-align: center;
+
+  h2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
 }
 
-
-.noticias h2 {
-  display: flex;
-  margin-top: 20px;
-  justify-content: flex-start;
-}
 
 /*contenedor de las noticias en fila*/
 .contenedor-noticias {
@@ -166,16 +161,14 @@ main a:hover{
   padding: 20px;
   background: #f5f5f5;
   border-radius: 10px;
-}
 
-
-.card-noticia img {
+  img {
     width: 100%;
     height: 200px;      /* todas mismo alto */
     object-fit: cover;  /* recorta sin deformar */
     border-radius: 10px;
+  }
 }
-
 
 
 /*contacto*/
@@ -202,36 +195,33 @@ main a:hover{
   display: flex;
   justify-content:center; /* centra horizontalmente */
   padding: 20px;
+
+  ul {          /*lista actividades en fila*/
+    display: flex;
+    list-style: none; /*quita los puntos de las listas*/
+    justify-content:center; /* centra horizontalmente */
+    flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
+    gap: 170px; /* espacio entre ellos */
+  }
+
+  li{
+    background-color: #F5F5F5;
+    border: #F5F5F5 5px solid;
+  }
+
+  img {
+    width:250px;
+    height:200px;
+    border: #ffffff 5px solid;
+  }
+
+  h3 {      /*títulos debajo de cada imagen*/
+    margin-top: 12px;
+    text-align: center; 
+    text-transform: uppercase;
+  }
 }
 
-/*lista actividades en fila*/
-.actividades ul {
-  display: flex;
-  list-style: none; /*quita los puntos de las listas*/
-  justify-content:center; /* centra horizontalmente */
-  flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-  gap: 170px; /* espacio entre ellos */
-}
-
-
-.actividades li {
-  background-color: #F5F5F5;
-  border: #F5F5F5 5px solid;
-
-}
-
-.actividades img {
-  width:250px;
-  height:200px;
-  border: #ffffff 5px solid;
-}
-
-/*títulos debajo de cada imagen*/
-.actividades h3 {
-  margin-top: 12px;
-  text-align: center; 
-  text-transform: uppercase;
-}
 
 .botonCentrado {
   display: flex;
@@ -245,14 +235,15 @@ main a:hover{
   display: flex;
   align-items: center;
   gap: 10px; /* espacio entre la imagen y el texto */
+
+  img{
+    width: 400px;
+    height: 300px;
+    padding: 0; /* espacio arriba y abajo */
+    border:#F5F5F5 5px solid;
+  }
 }
 
-#sedeVieja img{
-  width: 400px;
-  height: 300px;
-  padding: 0; /* espacio arriba y abajo */
-  border:#F5F5F5 5px solid;
-}
 
 /*sede nueva tamaño de imagen*/
 #sedeNueva{
@@ -260,14 +251,13 @@ main a:hover{
   justify-content: flex-end ; /* alinea a la derecha */
   align-items: center;
   gap: 10px; /* espacio entre la imagen y el texto */
-}
 
-#sedeNueva img{ 
-  width: 400px;
-  height: 300px;
-  border:#F5F5F5 5px solid;
+  img{ 
+    width: 400px;
+    height: 300px;
+    border:#F5F5F5 5px solid;
+  }
 }
-
 
 
 /*socios*/
@@ -286,13 +276,12 @@ footer{
   color: rgb(255, 255, 255);
   font-weight: 1000;
   padding: 10px 20px;
-}
 
-footer form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
@@ -303,12 +292,11 @@ footer form {
   padding: 10px;
   justify-content:end; /* centra horizontalmente */
   align-items: center;     /* centra verticalmente */
-}
 
-/*iconos de redes sociales tamaño*/
-.redes img {
-  width: 30px;
-  height: 30px;
+  img {             /*iconos de redes sociales tamaño*/
+    width: 30px;
+    height: 30px;
+  }
 }
 
 
@@ -333,26 +321,30 @@ footer form {
   .logo { 
     margin: 5px;
     justify-content: center;
-  }
 
-  .logo img {
-    width: 50%;
-    height: 50%;
+    img {
+      width: 50%;
+      height: 50%;
+    }
   }
 
     /*inicio*/
-  .actividades_inicio img {
-    width: 75%;
-    height: 75%;
-  }
-  .actividades_inicio ul {
-    gap: 100px; /* menos espacio entre ellos */
-    justify-content: center;
+  .actividades_inicio{
+    img {
+      width: 75%;
+      height: 75%;
+    }
+
+    ul {
+      gap: 100px; /* menos espacio entre ellos */
+      justify-content: center;
+    
+      li:nth-child(3) {
+        display: none; /* Oculto la tercera */
+      }
+    }
   }
 
-  .actividades_inicio ul li:nth-child(3) {
-    display: none; /* Oculto la tercera */
-  }
 
   .contenedor-noticias {
     justify-content: center;
@@ -361,30 +353,28 @@ footer form {
   .card-noticia {
     width: 90%;
     max-width: 400px;
-  }
 
-  .card-noticia img {
-    height: 180px;      /* todas iguales en mobile */
-    object-fit: cover;
+    img{
+      height: 180px;      /* todas iguales en mobile */
+      object-fit: cover;
+    }
   }
-
 
   /*actividades*/
-   .actividades ul {
-    gap: 40px;
-  }
+  .actividades{ 
+    ul {
+      gap: 40px;
+    }
 
-  /* 2 tarjetas por fila */
-  .actividades li {
-    width: 45%;
-  }
+    li {          /* 2 tarjetas por fila */
+      width: 45%;
+    }
 
-  /* que las imágenes se adapten al li */
-  .actividades img {
-    width: 100%;
-    height: auto;
+    img {          /*que las imágenes se adapten al li*/
+      width: 100%;
+      height: auto;
+    }
   }
-
 
 
   /*redes footer*/
@@ -394,14 +384,12 @@ footer form {
     padding: 10px;
     justify-content:flex-start; 
     align-items: center;     /* centra verticalmente */
-  }
 
-  /*iconos de redes sociales tamaño*/
-  .redes img {
-    width: 20px;
-    height: 20px;
+    img {           /*iconos de redes sociales tamaño*/
+      width: 20px;
+      height: 20px;
+    }
   }
-
 }
 
 /*adaptación mobile*/
@@ -420,19 +408,21 @@ footer form {
   }
 
   /* INICIO */
-  .actividades_inicio img {
-    width: 100%;
-    height: auto;
-  }
+  .actividades_inicio{ 
+    img {
+      width: 100%;
+      height: auto;
+    }
 
-  .actividades_inicio ul {
-    flex-direction: column;
-    gap: 40px;
-  }
+    ul {
+      flex-direction: column;
+      gap: 40px;
+    
 
-  /* Ocultamos solo si aún querés */
-  .actividades_inicio ul li:nth-child(3) {
-    display: none;
+      li:nth-child(3) {
+        display: none;
+      }
+    }
   }
 
   /* NOTICIAS */
@@ -443,34 +433,33 @@ footer form {
 
   .card-noticia {
     width: 95%;
-  }
 
-  .card-noticia img {
-    height: 160px;
+    img {
+      height: 160px;
+    }
   }
-
 
   /* ACTIVIDADES */
   .actividades ul {
     flex-direction: column;
     gap: 25px;
-  }
 
-  /* 1 tarjeta por fila */
-  .actividades li {
-    width: 100%;
+    li {          /* 1 tarjeta por fila */
+      width: 100%;
+    }
   }
 
   /* FOOTER */
   .redes {
     justify-content: center;
     gap: 15px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
 
-  .redes img {
-    width: 24px;
-    height: 24px;
-  }
 
   /* HISTORIA */
   #sedeVieja,
@@ -480,23 +469,19 @@ footer form {
     justify-content: center;
     text-align: center;
     padding: 10px;
-  }
 
-  /* IMÁGENES */
-  #sedeVieja img,
-  #sedeNueva img{
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
+    img{
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
 
-  /* TEXTO */
-  #sedeVieja p,
-  #sedeNueva p{
-    max-width: 100%;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    padding: 5px;
+    p{
+      max-width: 100%;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      padding: 5px;
+    }
   }
 
 }
