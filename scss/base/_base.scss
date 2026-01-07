@@ -1,0 +1,30 @@
+/*general*/
+/*títulos h1 centrado y en mayúsculas*/
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*selector + propiedad con valor*/ 
+main{
+    background-color:#ffffff;
+    font-family: "Roboto", sans-serif;
+    color: #D62828 ;
+    padding: 10px 20px; /* espacio alrededor */
+
+    p{  /*parrafos dentro del main*/
+        font-size: 18px;
+        color: #000000;
+        background-color: #F5F5F5;
+    }
+
+    a{ /*links dentro del main color negro y subrayado*/
+        color: #000000;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: underline;
+            color: rgb(255, 0, 0);
+        }
+    }
+}

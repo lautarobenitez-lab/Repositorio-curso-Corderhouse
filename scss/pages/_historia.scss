@@ -1,0 +1,57 @@
+/*historia*/
+/*sede vieja tamaño de imagen*/
+#sedeVieja{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre la imagen y el texto */
+
+    img{
+        width: 400px;
+        height: 300px;
+        padding: 0; /* espacio arriba y abajo */
+        border:#F5F5F5 5px solid;
+    }
+}
+
+
+/*sede nueva tamaño de imagen*/
+#sedeNueva{
+    display: flex;
+    justify-content: flex-end ; /* alinea a la derecha */
+    align-items: center;
+    gap: 10px; /* espacio entre la imagen y el texto */
+
+    img{ 
+        width: 400px;
+        height: 300px;
+        border:#F5F5F5 5px solid;
+    }
+}
+
+
+/*adaptación mobile*/
+@media (max-width: 576px) {
+
+    /* HISTORIA */
+    #sedeVieja,
+    #sedeNueva{
+        flex-direction: column;   /* imagen arriba, texto abajo */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+
+        img{
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        p{
+            max-width: 100%;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            padding: 5px;
+        }
+    }
+}

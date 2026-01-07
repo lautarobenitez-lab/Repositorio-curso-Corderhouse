@@ -1,0 +1,68 @@
+/*actividades*/
+/*lista actividades en bloque*/
+.actividades {
+    display: flex;
+    justify-content:center; /* centra horizontalmente */
+    padding: 20px;
+
+    ul {          /*lista actividades en fila*/
+        display: flex;
+        list-style: none; /*quita los puntos de las listas*/
+        justify-content:center; /* centra horizontalmente */
+        flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
+        gap: 170px; /* espacio entre ellos */
+    }
+
+    li{
+        background-color: #F5F5F5;
+        border: #F5F5F5 5px solid;
+    }
+
+    img {
+        width:250px;
+        height:200px;
+        border: #ffffff 5px solid;
+    }
+
+    h3 {      /*títulos debajo de cada imagen*/
+        margin-top: 12px;
+        text-align: center; 
+        text-transform: uppercase;
+    }
+}
+
+
+/*adaptación tablet*/
+@media (max-width: 800px){
+
+    /*actividades*/
+    .actividades{ 
+        ul {
+            gap: 40px;
+        }
+
+        li {          /* 2 tarjetas por fila */
+            width: 45%;
+        }
+
+        img {          /*que las imágenes se adapten al li*/
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+/*adaptación mobile*/
+@media (max-width: 576px) {
+
+    /* ACTIVIDADES */
+    .actividades ul {
+        flex-direction: column;
+        gap: 25px;
+
+        li {          /* 1 tarjeta por fila */
+            width: 100%;
+        }
+    }
+}

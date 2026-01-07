@@ -1,0 +1,58 @@
+header a:hover, 
+header a:focus-visible{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+/*box que contiene logo y h2 alineados a la izquierda*/
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+/*logo imagen y texto alineados*/
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-start;
+
+    img {         /*logo tamaño*/
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/*adaptación tablet*/
+@media (max-width: 800px){
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo { 
+        margin: 5px;
+        justify-content: center;
+
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}
+
+
+/*adaptación mobile*/
+@media (max-width: 576px) {
+
+    .logo img {
+        width: 60%;
+        height: auto;
+    }
+}

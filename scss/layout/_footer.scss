@@ -1,0 +1,64 @@
+/*footer*/
+/*footer color de fondo*/
+footer{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    padding: 10px 20px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*estilo redes sociales en el footer*/
+.redes {
+    display: flex;
+    gap: 20px;              /* espacio entre los íconos */
+    padding: 10px;
+    justify-content:end; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+
+    img {             /*iconos de redes sociales tamaño*/
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/*adaptación tablet*/
+@media (max-width: 800px){
+
+    /*redes footer*/
+    .redes {
+        display: flex;
+        gap: 20px;              /* espacio entre los íconos */
+        padding: 10px;
+        justify-content:flex-start; 
+        align-items: center;     /* centra verticalmente */
+
+        img {           /*iconos de redes sociales tamaño*/
+            width: 20px;
+            height: 20px;
+        }
+    }   
+}
+
+
+/*adaptación mobile*/
+@media (max-width: 576px) {
+
+    /* FOOTER */
+    .redes {
+        justify-content: center;
+        gap: 15px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
