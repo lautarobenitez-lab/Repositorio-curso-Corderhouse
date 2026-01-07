@@ -5,7 +5,7 @@
 .actividades {
     display: flex;
     justify-content:center; /* centra horizontalmente */
-    padding: 20px;
+    padding: $md;
 
     ul {          /*lista actividades en fila*/
         display: flex;
@@ -27,7 +27,7 @@
     }
 
     h3 {      /*títulos debajo de cada imagen*/
-        margin-top: 12px;
+        margin-top: $sm;
         text-align: center; 
         text-transform: uppercase;
     }
@@ -40,7 +40,7 @@
     /*actividades*/
     .actividades{ 
         ul {
-            gap: 40px;
+            gap: $lg;
         }
 
         li {          /* 2 tarjetas por fila */

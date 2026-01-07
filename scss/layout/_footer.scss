@@ -7,7 +7,7 @@ footer{
     background-color: $font-color;
     color: $primary-color;
     font-weight: 1000;
-    padding: 10px 20px;
+    padding: $xs $md;
 
     form {
         display: flex;
@@ -20,8 +20,8 @@ footer{
 /*estilo redes sociales en el footer*/
 .redes {
     display: flex;
-    gap: 20px;              /* espacio entre los íconos */
-    padding: 10px;
+    gap: $md;              /* espacio entre los íconos */
+    padding: $xs;
     justify-content:end; /* centra horizontalmente */
     align-items: center;     /* centra verticalmente */
 
@@ -38,14 +38,14 @@ footer{
     /*redes footer*/
     .redes {
         display: flex;
-        gap: 20px;              /* espacio entre los íconos */
-        padding: 10px;
+        gap: $md;              /* espacio entre los íconos */
+        padding: $xs;
         justify-content:flex-start; 
         align-items: center;     /* centra verticalmente */
 
         img {           /*iconos de redes sociales tamaño*/
-            width: 20px;
-            height: 20px;
+            width: $md;
+            height: $md;
         }
     }   
 }

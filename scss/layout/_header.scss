@@ -14,14 +14,14 @@ header a:focus-visible{
     justify-content: flex-start; 
     align-items: center;
     text-align: left;
-    gap: 1rem;
+    gap: $xl;
 }
 
 /*logo imagen y texto alineados*/
 .logo {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: $xs;
     justify-content: flex-start;
 
     img {         /*logo tamaño*/

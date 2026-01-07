@@ -5,7 +5,7 @@
 #sedeVieja{
     display: flex;
     align-items: center;
-    gap: 10px; /* espacio entre la imagen y el texto */
+    gap: $xs; /* espacio entre la imagen y el texto */
 
     img{
         width: 400px;
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: flex-end ; /* alinea a la derecha */
     align-items: center;
-    gap: 10px; /* espacio entre la imagen y el texto */
+    gap: $xs; /* espacio entre la imagen y el texto */
 
     img{ 
         width: 400px;
@@ -41,7 +41,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 10px;
+        padding: $xs;
 
         img{
             width: 100%;

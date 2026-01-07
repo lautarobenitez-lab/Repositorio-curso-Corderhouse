@@ -4,27 +4,27 @@
 .actividades_inicio {
     display: flex;
     justify-content:center; /* centra horizontalmente */
-    padding: 20px;
+    padding: $md;
 
     ul {                /*lista actividades en fila*/
         display: flex;
         list-style: none; /*quita los puntos de las listas*/
-        gap: 2rem; /* espacio entre ellos */
-        padding: 20px 10px; 
+        gap: $xxl; /* espacio entre ellos */
+        padding: $md $xs; 
     }
 
     li {         /*estilo del listado. button y h3 centrados*/  
         background-color: $secondary-color;
         text-align: center; 
         text-transform: uppercase;  
-        padding: 10px;
+        padding: $xs;
     }
 
     img {
         width: 100%;
         height: 200px;      /* todas mismo alto */
         object-fit: cover;  /* recorta sin deformar */
-        border-radius: 10px;
+        border-radius: $xs;
     }
 
     a {
@@ -33,7 +33,7 @@
     }
 
     h3 {
-        margin-top: 12px;
+        margin-top: $sm;
     }
 }
 
@@ -41,7 +41,7 @@
 .noticias {
     text-align: center;
     h2 {
-        margin-top: 20px;
+        margin-top: $md;
         text-align: left;
     }
 }
@@ -51,23 +51,23 @@
 .contenedor-noticias {
     display: flex;
     justify-content: space-around;
-    gap: 40px;
-    padding: 20px;
+    gap: $lg;
+    padding: $md;
     flex-wrap: wrap; /* por si en algún momento no entran */
 }
 
 /*tarjetas de noticias*/
 .card-noticia {
     width: 300px;
-    padding: 20px;
+    padding: $md;
     background: $secondary-color;
-    border-radius: 10px;
+    border-radius: $xs;
 
     img {
         width: 100%;
         height: 200px;      /* todas mismo alto */
         object-fit: cover;  /* recorta sin deformar */
-        border-radius: 10px;
+        border-radius: $xs;
     }
 }
 
@@ -119,7 +119,7 @@
 
         ul {
             flex-direction: column;
-            gap: 40px;
+            gap: $lg;
     
 
             li:nth-child(3) {
