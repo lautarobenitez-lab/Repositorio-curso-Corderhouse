@@ -1,3 +1,6 @@
+@use "../base/variables";
+
+
 /*nav con logo a la izquierda y lista a la derecha*/
 .menuNav, .nav-link {
     display: flex;
