@@ -1,4 +1,4 @@
-@use "./variables";
+@use "variables" as *;
 /*general*/
 /*títulos h1 centrado y en mayúsculas*/
 h1{
@@ -9,19 +9,19 @@ h1{
 
 /*selector + propiedad con valor*/ 
 main{
-    background-color:$primary-color;
+    background-color: $primary-color;
     font-family: "Roboto", sans-serif;
     color: $titulos-font-color ;
     padding: 10px 20px; /* espacio alrededor */
 
     p{  /*parrafos dentro del main*/
         font-size: 18px;
-        color: $body-font-color;
+        color: $font-color;
         background-color: #F5F5F5;
     }
 
     a{ /*links dentro del main color negro y subrayado*/
-        color: $body-font-color;
+        color: $font-color;
         text-decoration: underline;
         &:hover{
             text-decoration: underline;
