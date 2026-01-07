@@ -8,23 +8,23 @@ h1{
 
 /*selector + propiedad con valor*/ 
 main{
-    background-color:#ffffff;
+    background-color: $primary-color;
     font-family: "Roboto", sans-serif;
-    color: #D62828 ;
+    color: $titulos-color;
     padding: 10px 20px; /* espacio alrededor */
 
     p{  /*parrafos dentro del main*/
         font-size: 18px;
-        color: #000000;
-        background-color: #F5F5F5;
+        color: $font-color;
+        background-color: $secondary-color;
     }
 
     a{ /*links dentro del main color negro y subrayado*/
-        color: #000000;
+        color: $font-color;
         text-decoration: underline;
         &:hover{
             text-decoration: underline;
-            color: rgb(255, 0, 0);
+            color: $header-color;
         }
     }
 }

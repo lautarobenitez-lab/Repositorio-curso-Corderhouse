@@ -1,7 +1,7 @@
 .forms{
-    background-color: rgba(200, 220, 240, 0.573);
-    border: #ffffff 1px solid;
-    color: #D62828;
+    background-color: $secondary-color;
+    border: $primary-color 1px solid;
+    color: $titulos-color;
     font-size: 16px;
     cursor: pointer;
 }
