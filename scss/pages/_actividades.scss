@@ -21,8 +21,8 @@
     }
 
     img {
-        width:250px;
-        height:200px;
+        width:$img-xxl;
+        height:$img-xl;
         border: $primary-color 5px solid;
     }
 
@@ -59,12 +59,19 @@
 @media (max-width: 576px) {
 
     /* ACTIVIDADES */
-    .actividades ul {
-        flex-direction: column;
-        gap: 25px;
-
+    .actividades{
+        ul {
+            flex-direction: column;
+            gap: 25px;
+        }
+        
         li {          /* 1 tarjeta por fila */
             width: 100%;
+        }
+
+        img {          /*que las imágenes se adapten al li*/
+            width: 100%;
+            height: auto;
         }
     }
 }

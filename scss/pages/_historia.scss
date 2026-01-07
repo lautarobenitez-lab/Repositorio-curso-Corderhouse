@@ -8,8 +8,8 @@
     gap: $xs; /* espacio entre la imagen y el texto */
 
     img{
-        width: 400px;
-        height: 300px;
+        width: $img-xxxxl;
+        height: $img-xxxl;
         padding: 0; /* espacio arriba y abajo */
         border:$secondary-color 5px solid;
     }
@@ -24,9 +24,9 @@
     gap: $xs; /* espacio entre la imagen y el texto */
 
     img{ 
-        width: 400px;
-        height: 300px;
-        border:#F5F5F5 5px solid;
+        width: $img-xxxxl;
+        height: $img-xxxl;
+        border: $secondary-color 5px solid;
     }
 }
 
@@ -45,7 +45,7 @@
 
         img{
             width: 100%;
-            max-width: 300px;
+            max-width: $img-xxxl;
             height: auto;
         }
 

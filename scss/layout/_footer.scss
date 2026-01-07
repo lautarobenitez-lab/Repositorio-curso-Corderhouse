@@ -26,8 +26,8 @@ footer{
     align-items: center;     /* centra verticalmente */
 
     img {             /*iconos de redes sociales tamaño*/
-        width: 30px;
-        height: 30px;
+        width: $img-sm;
+        height: $img-sm;
     }
 }
 
@@ -44,8 +44,8 @@ footer{
         align-items: center;     /* centra verticalmente */
 
         img {           /*iconos de redes sociales tamaño*/
-            width: $md;
-            height: $md;
+            width: $img-xs;
+            height: $img-xs;
         }
     }   
 }

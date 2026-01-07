@@ -22,7 +22,7 @@
 
     img {
         width: 100%;
-        height: 200px;      /* todas mismo alto */
+        height: $img-xl;      /* todas mismo alto */
         object-fit: cover;  /* recorta sin deformar */
         border-radius: $xs;
     }
@@ -65,7 +65,7 @@
 
     img {
         width: 100%;
-        height: 200px;      /* todas mismo alto */
+        height: $img-xl;      /* todas mismo alto */
         object-fit: cover;  /* recorta sin deformar */
         border-radius: $xs;
     }
