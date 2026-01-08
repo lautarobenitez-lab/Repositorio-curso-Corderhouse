@@ -11,17 +11,14 @@ footer{
     padding: $xs $md;
 
     form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(center, center, column);
     }
 }
 
 
 /*estilo redes sociales en el footer*/
 .redes {
-    @include flex(end, center);
-    gap: $md;              /* espacio entre los íconos */
+    @include flex(end, center, row, $md);
     padding: $xs;
 
     img {             /*iconos de redes sociales tamaño*/
@@ -36,8 +33,7 @@ footer{
 
     /*redes footer*/
     .redes {
-        @include flex(flex-start, center);   
-        gap: $md;              /* espacio entre los íconos */
+        @include flex(flex-start, center, row, $md);   
         padding: $xs;
 
         img {           /*iconos de redes sociales tamaño*/
@@ -53,8 +49,7 @@ footer{
 
     /* FOOTER */
     .redes {
-        justify-content: center;
-        gap: $sm;
+        @include flex(center, $gap: $sm);
 
         img {
             width: $img-xs;

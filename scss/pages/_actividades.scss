@@ -12,7 +12,7 @@
         list-style: none; /*quita los puntos de las listas*/
         justify-content:center; /* centra horizontalmente */
         flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-        gap: $lg; /* espacio entre ellos */
+        gap: $xl; /* espacio entre ellos */
     }
 
     li{
@@ -21,8 +21,8 @@
     }
 
     img {
-        width:$img-xxl;
-        height:$img-xl;
+        width: $img-xxl;  // ancho fijo
+        height: auto;     // mantiene proporción
         border: $border-md solid $primary-color;
     }
 

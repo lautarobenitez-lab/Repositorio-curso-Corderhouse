@@ -1,14 +1,12 @@
 @use "../base/variables" as *;
 
-
-/*nav con logo a la izquierda y lista a la derecha*/
 .menuNav, .nav-link {
     display: flex;
     background-color: $header-color;
     color: $primary-color;
 }
 
-/*nav lista en fila*/
+    /*nav lista en fila*/
 nav{
     ul {
         gap: $lg;
@@ -18,11 +16,6 @@ nav{
     }
 
     /*nav con logo a la izquierda y lista a la derecha*/
-    .menuNav, .nav-link {
-        display: flex;
-        background-color: $header-color;
-        color: $primary-color;
-    }
 }
 
 /*nav columna*/

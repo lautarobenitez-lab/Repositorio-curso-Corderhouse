@@ -11,9 +11,8 @@ header a:focus-visible{
 /*box que contiene logo y h2 alineados a la izquierda*/
 .box {
     width: 100%;
-    @include flex(flex-start, center);
+    @include flex(flex-start, center, row, $sm);
     text-align: left;
-    gap: $sm;
 }
 
 /*logo imagen y texto alineados*/
@@ -32,8 +31,7 @@ header a:focus-visible{
 @media (max-width: $bp-tablet) {
 
     .box {
-        flex-direction: column;
-        text-align: center;
+        @include flex(center, center, column);
     }
 
     .logo { 

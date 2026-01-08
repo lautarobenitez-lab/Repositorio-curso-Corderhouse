@@ -45,6 +45,8 @@ main a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
 }
 
 /*footer*/
@@ -57,8 +59,10 @@ footer {
 }
 footer form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 0;
 }
 
 /*estilo redes sociales en el footer*/
@@ -66,7 +70,8 @@ footer form {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 20px; /* espacio entre los íconos */
+  flex-direction: row;
+  gap: 20px;
   padding: 10px;
 }
 .redes img { /*iconos de redes sociales tamaño*/
@@ -81,7 +86,8 @@ footer form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px; /* espacio entre los íconos */
+    flex-direction: row;
+    gap: 20px;
     padding: 10px;
   }
   .redes img { /*iconos de redes sociales tamaño*/
@@ -93,7 +99,10 @@ footer form {
 @media (max-width: 576px) {
   /* FOOTER */
   .redes {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
     gap: 12px;
   }
   .redes img {
@@ -113,8 +122,9 @@ header a:focus-visible {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-align: left;
+  flex-direction: row;
   gap: 12px;
+  text-align: left;
 }
 
 /*logo imagen y texto alineados*/
@@ -122,6 +132,8 @@ header a:focus-visible {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
   margin: 10px;
 }
 .logo img { /*logo tamaño*/
@@ -132,8 +144,11 @@ header a:focus-visible {
 /*adaptación tablet*/
 @media (max-width: 800px) {
   .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
+    gap: 0;
   }
   .logo {
     margin: 5px;
@@ -151,7 +166,6 @@ header a:focus-visible {
     height: auto;
   }
 }
-/*nav con logo a la izquierda y lista a la derecha*/
 .menuNav, .nav-link {
   display: flex;
   background-color: #c1121f;
@@ -167,11 +181,6 @@ nav ul {
 }
 nav {
   /*nav con logo a la izquierda y lista a la derecha*/
-}
-nav .menuNav, nav .nav-link {
-  display: flex;
-  background-color: #c1121f;
-  color: #ffffff;
 }
 
 /*nav columna*/
@@ -216,7 +225,7 @@ nav .menuNav, nav .nav-link {
   list-style: none; /*quita los puntos de las listas*/
   justify-content: center; /* centra horizontalmente */
   flex-wrap: wrap; /* permite que bajen a otra fila si no caben */
-  gap: 40px; /* espacio entre ellos */
+  gap: 70px; /* espacio entre ellos */
 }
 .actividades li {
   background-color: #f5f5f5;
@@ -224,7 +233,7 @@ nav .menuNav, nav .nav-link {
 }
 .actividades img {
   width: 250px;
-  height: 200px;
+  height: auto;
   border: 5px solid #ffffff;
 }
 .actividades h3 { /*títulos debajo de cada imagen*/
@@ -287,6 +296,8 @@ nav .menuNav, nav .nav-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    gap: 0;
     flex-direction: column; /* imagen arriba, texto abajo */
     text-align: center;
     padding: 10px;
@@ -300,7 +311,7 @@ nav .menuNav, nav .nav-link {
   #sedeVieja p,
   #sedeNueva p {
     max-width: 100%;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 1.6;
     padding: 5px;
   }
