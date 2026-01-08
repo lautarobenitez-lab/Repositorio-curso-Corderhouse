@@ -20,8 +20,9 @@
     }
 
     img {
-        @include size(100%, $img-xl);
+        @include size($img-xxl, $img-xl);
         object-fit: cover;  /* recorta sin deformar */
+        object-position: center; // centra la parte importante
         border-radius: $border-radius-md;
 
         transition: transform 0.3s ease;
