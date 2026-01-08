@@ -1,15 +1,14 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 /*inicio*/
 .actividades_inicio {
-    display: flex;
-    justify-content:center; /* centra horizontalmente */
+    @include flex(center);
     padding: $md;
 
     ul {                /*lista actividades en fila*/
-        display: flex;
+        @include flex($gap: $lg);
         list-style: none; /*quita los puntos de las listas*/
-        gap: $lg; /* espacio entre ellos */
         padding: $md $xs; 
     }
 
@@ -21,15 +20,13 @@
     }
 
     img {
-        width: 100%;
-        height: $img-xl;      /* todas mismo alto */
+        @include size(100%, $img-xl);
         object-fit: cover;  /* recorta sin deformar */
         border-radius: $border-radius-md;
     }
 
     a {
-        display: flex;
-        align-items: center; 
+        @include flex($align: center);
     }
 
     h3 {
@@ -49,9 +46,7 @@
 
 /*contenedor de las noticias en fila*/
 .contenedor-noticias {
-    display: flex;
-    justify-content: space-around;
-    gap: $lg;
+    @include flex(space-around, $gap: $lg);
     padding: $md;
     flex-wrap: wrap; /* por si en algún momento no entran */
 }
@@ -64,8 +59,7 @@
     border-radius: $xs;
 
     img {
-        width: 100%;
-        height: $img-xl;      /* todas mismo alto */
+        @include size(100%, $img-xl);
         object-fit: cover;  /* recorta sin deformar */
         border-radius: $xs;
     }
@@ -77,13 +71,11 @@
 
     .actividades_inicio{
         img {
-            width: 75%;
-            height: 75%;
+            @include size(75%, 75%);
         }
 
         ul {
-            gap: $mdg; /* menos espacio entre ellos */
-            justify-content: center;
+            @include flex(center, $gap: $mdg);
     
             li:nth-child(3) {
                 display: none; /* Oculto la tercera */
@@ -113,8 +105,7 @@
     /* INICIO */
     .actividades_inicio{ 
         img {
-            width: 100%;
-            height: auto;
+            @include size(100%, auto);
         }
 
         ul {
@@ -130,8 +121,7 @@
 
     /* NOTICIAS */
     .contenedor-noticias {
-        flex-direction: column;
-        align-items: center;
+        @include flex(center, center, column);
     }
 
     .card-noticia {

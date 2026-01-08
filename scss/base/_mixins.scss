@@ -1,7 +1,14 @@
+// Flexbox Mixin
 @mixin flex($justify: flex-start, $align: center, $direction: row, $gap: 0) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
   gap: $gap;
+}
+
+// Size Mixin (img)
+@mixin size($width, $height: auto) {
+    width: $width;
+    height: $height;
 }

@@ -2,7 +2,7 @@
 
 .forms{
     background-color: $secondary-color;
-    border: 1px solid $primary-color;
+    border: $border-xxs solid $primary-color;
     color: $titulos-font-color;
     font-size: $md;
     cursor: pointer;

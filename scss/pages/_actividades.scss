@@ -1,29 +1,30 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
+
 
 /*actividades*/
 /*lista actividades en bloque*/
 .actividades {
-    display: flex;
-    justify-content:center; /* centra horizontalmente */
+    @include flex(center);
     padding: $md;
 
     ul {          /*lista actividades en fila*/
-        display: flex;
+        @include flex(center, $gap:$xl);
         list-style: none; /*quita los puntos de las listas*/
-        justify-content:center; /* centra horizontalmente */
         flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-        gap: $xl; /* espacio entre ellos */
     }
 
     li{
         background-color: $secondary-color;
         border: $border-md solid $secondary-color;
+        @include flex(center, center, column);
     }
 
     img {
-        width: $img-xxl;  // ancho fijo
-        height: auto;     // mantiene proporción
+        @include size($img-xxl, $img-xl);
         border: $border-md solid $primary-color;
+        object-fit: cover;     // recorta para llenar sin deformar
+        object-position: center; // centra la parte importante
     }
 
     h3 {      /*títulos debajo de cada imagen*/
@@ -48,8 +49,7 @@
         }
 
         img {          /*que las imágenes se adapten al li*/
-            width: 100%;
-            height: auto;
+            @include size(100%, auto);
         }
     }
 }
@@ -61,8 +61,7 @@
     /* ACTIVIDADES */
     .actividades{
         ul {
-            flex-direction: column;
-            gap: $md;
+            @include flex($direction: column, $gap: $md);
         }
 
         li {          /* 1 tarjeta por fila */

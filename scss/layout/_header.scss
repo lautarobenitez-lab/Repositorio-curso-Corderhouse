@@ -21,8 +21,7 @@ header a:focus-visible{
     margin: $xs;
 
     img {         /*logo tamaño*/
-        width: $img-lg;
-        height: $img-lg;
+        @include size($img-lg, $img-lg);
     }
 }
 
@@ -39,8 +38,7 @@ header a:focus-visible{
         justify-content: center;
 
         img {
-            width: 50%;
-            height: 50%;
+            @include size(50%, 50%);
         }
     }
 }
@@ -50,7 +48,6 @@ header a:focus-visible{
 @media (max-width: $bp-mobile) {
 
     .logo img {
-        width: 60%;
-        height: auto;
+        @include size(60%, auto);
     }
 }

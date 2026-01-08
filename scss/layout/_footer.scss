@@ -22,8 +22,7 @@ footer{
     padding: $xs;
 
     img {             /*iconos de redes sociales tamaño*/
-        width: $img-sm;
-        height: $img-sm;
+        @include size($img-sm, $img-sm);
     }
 }
 
@@ -37,8 +36,7 @@ footer{
         padding: $xs;
 
         img {           /*iconos de redes sociales tamaño*/
-            width: $img-xs;
-            height: $img-xs;
+            @include size($img-xs, $img-xs);
         }
     }   
 }
