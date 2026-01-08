@@ -64,10 +64,10 @@ footer form {
 /*estilo redes sociales en el footer*/
 .redes {
   display: flex;
+  justify-content: end;
+  align-items: center;
   gap: 20px; /* espacio entre los íconos */
   padding: 10px;
-  justify-content: end; /* centra horizontalmente */
-  align-items: center; /* centra verticalmente */
 }
 .redes img { /*iconos de redes sociales tamaño*/
   width: 30px;
@@ -79,10 +79,10 @@ footer form {
   /*redes footer*/
   .redes {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px; /* espacio entre los íconos */
     padding: 10px;
-    justify-content: flex-start;
-    align-items: center; /* centra verticalmente */
   }
   .redes img { /*iconos de redes sociales tamaño*/
     width: 20px;
@@ -120,9 +120,9 @@ header a:focus-visible {
 /*logo imagen y texto alineados*/
 .logo {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin: 10px;
-  justify-content: flex-start;
 }
 .logo img { /*logo tamaño*/
   width: 100px;
@@ -284,9 +284,10 @@ nav .menuNav, nav .nav-link {
   /* HISTORIA */
   #sedeVieja,
   #sedeNueva {
-    flex-direction: column; /* imagen arriba, texto abajo */
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column; /* imagen arriba, texto abajo */
     text-align: center;
     padding: 10px;
   }
