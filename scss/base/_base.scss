@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 /*general*/
 /*títulos h1 centrado y en mayúsculas*/
@@ -30,3 +31,11 @@ main{
         }
     }
 }
+
+@media (max-width: $bp-tablet) {
+    main {
+        h2 {
+            @include flex(flex-start)
+        }
+    }
+}   

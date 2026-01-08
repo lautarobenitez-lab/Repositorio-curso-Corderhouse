@@ -29,6 +29,10 @@ header a:focus-visible{
 /*adaptación tablet*/
 @media (max-width: $bp-tablet) {
 
+    h2 {
+        text-align: center;
+    }
+
     .box {
         @include flex(center, center, column);
     }

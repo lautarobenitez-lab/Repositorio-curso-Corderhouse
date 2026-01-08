@@ -34,6 +34,15 @@ main a:hover {
   color: #c1121f;
 }
 
+@media (max-width: 800px) {
+  main h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+  }
+}
 .forms {
   background-color: #f5f5f5;
   border: 1px solid #ffffff;
@@ -149,6 +158,9 @@ header a:focus-visible {
 
 /*adaptación tablet*/
 @media (max-width: 800px) {
+  h2 {
+    text-align: center;
+  }
   .box {
     display: flex;
     justify-content: center;
@@ -268,10 +280,6 @@ nav {
   }
   .actividades li { /* 2 tarjetas por fila */
     width: 45%;
-  }
-  .actividades img { /*que las imágenes se adapten al li*/
-    width: 100%;
-    height: auto;
   }
 }
 /*adaptación mobile*/
@@ -441,11 +449,6 @@ nav {
   }
   .card-noticia {
     width: 90%;
-    max-width: 400px;
-  }
-  .card-noticia img {
-    height: 200px; /* todas iguales en mobile */
-    object-fit: cover;
   }
 }
 /*adaptación mobile*/

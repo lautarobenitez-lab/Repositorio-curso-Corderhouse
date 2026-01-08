@@ -48,9 +48,7 @@
             width: 45%;
         }
 
-        img {          /*que las imágenes se adapten al li*/
-            @include size(100%, auto);
-        }
+
     }
 }
 

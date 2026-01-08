@@ -82,10 +82,6 @@
 /*adaptación tablet*/
 @media (max-width: $bp-tablet) {
 
-    h2 {
-        text-align: center;
-    }
-
     .actividades_inicio{
         img {
             @include size(75%, 75%);
@@ -106,12 +102,6 @@
 
     .card-noticia {
         width: 90%;
-        max-width: $img-xxxxl;
-
-        img{
-            height: $img-xl;      /* todas iguales en mobile */
-            object-fit: cover;
-        }
     }
 }
 
