@@ -1,8 +1,8 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
+
 
 /*historia*/
-
-
 
 /*sede nueva tamaño de imagen*/
 #sedeNueva, #sedeVieja{
@@ -31,9 +31,8 @@
     /* HISTORIA */
     #sedeVieja,
     #sedeNueva{
+        @include flex (center, center);
         flex-direction: column;   /* imagen arriba, texto abajo */
-        align-items: center;
-        justify-content: center;
         text-align: center;
         padding: $xs;
 

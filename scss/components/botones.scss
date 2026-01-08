@@ -1,5 +1,5 @@
+@use "../base/mixins" as *;
+
 .botonCentrado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
 }

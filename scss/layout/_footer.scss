@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 
 /*footer*/
@@ -19,11 +20,9 @@ footer{
 
 /*estilo redes sociales en el footer*/
 .redes {
-    display: flex;
+    @include flex(end, center);
     gap: $md;              /* espacio entre los íconos */
     padding: $xs;
-    justify-content:end; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
 
     img {             /*iconos de redes sociales tamaño*/
         width: $img-sm;
@@ -37,11 +36,9 @@ footer{
 
     /*redes footer*/
     .redes {
-        display: flex;
+        @include flex(flex-start, center);   
         gap: $md;              /* espacio entre los íconos */
         padding: $xs;
-        justify-content:flex-start; 
-        align-items: center;     /* centra verticalmente */
 
         img {           /*iconos de redes sociales tamaño*/
             width: $img-xs;
