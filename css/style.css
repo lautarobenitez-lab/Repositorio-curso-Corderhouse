@@ -33,7 +33,7 @@ main a { /*links dentro del main color negro y subrayado*/
 }
 main a:hover {
   text-decoration: underline;
-  color: #ff0000;
+  color: #c1121f;
 }
 
 .forms {
@@ -156,7 +156,7 @@ header a:focus-visible {
 /*nav con logo a la izquierda y lista a la derecha*/
 .menuNav, .nav-link {
   display: flex;
-  background-color: #ff0000;
+  background-color: #c1121f;
   color: #ffffff;
 }
 
