@@ -33,12 +33,12 @@ nav{
 /*menu alineado a la derecha*/
 .menuDerecha {
     align-self: flex-end;   
-    margin-top: $xl;        
+    margin-top: $lg;        
 }
 
 
 /*adaptación tablet*/
-@media (max-width: 800px){
+@media (max-width: $bp-tablet) {
 
     /*nav centrado*/
     nav {
@@ -52,7 +52,7 @@ nav{
 }
 
 /*adaptación mobile*/
-@media (max-width: 576px) {
+@media (max-width: $bp-mobile){ 
 
     /* NAV */
     nav {

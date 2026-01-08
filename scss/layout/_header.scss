@@ -32,7 +32,7 @@ header a:focus-visible{
 
 
 /*adaptación tablet*/
-@media (max-width: 800px){
+@media (max-width: $bp-tablet) {
 
     .box {
         flex-direction: column;
@@ -52,7 +52,7 @@ header a:focus-visible{
 
 
 /*adaptación mobile*/
-@media (max-width: 576px) {
+@media (max-width: $bp-mobile) {
 
     .logo img {
         width: 60%;

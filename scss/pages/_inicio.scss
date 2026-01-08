@@ -73,7 +73,7 @@
 
 
 /*adaptación tablet*/
-@media (max-width: 800px){
+@media (max-width: $bp-tablet) {
 
     .actividades_inicio{
         img {
@@ -108,7 +108,7 @@
 
 
 /*adaptación mobile*/
-@media (max-width: 576px) {
+@media (max-width: $bp-mobile) {
 
     /* INICIO */
     .actividades_inicio{ 

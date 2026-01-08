@@ -33,7 +33,7 @@ footer{
 
 
 /*adaptación tablet*/
-@media (max-width: 800px){
+@media (max-width: $bp-tablet) {
 
     /*redes footer*/
     .redes {
@@ -52,7 +52,7 @@ footer{
 
 
 /*adaptación mobile*/
-@media (max-width: 576px) {
+@media (max-width: $bp-mobile) {
 
     /* FOOTER */
     .redes {
