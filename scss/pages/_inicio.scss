@@ -134,11 +134,16 @@
 
     /* NOTICIAS */
     .contenedor-noticias {
-        @include flex(center, center, column);
+        @include flex(center, stretch, row, $lg);
     }
 
     .card-noticia {
-        width: 95%;
+        @include flex($direction: column);
+        height: 100%;
+
+        a  {
+            margin-top: auto;
+        }
 
         img {
             height: $img-lg;

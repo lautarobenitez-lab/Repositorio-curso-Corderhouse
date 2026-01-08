@@ -27,7 +27,7 @@ main p { /*parrafos dentro del main*/
 main a { /*links dentro del main color negro y subrayado*/
   color: #000000;
   text-decoration: underline;
-  transition: color 2s ease, text-decoration-color 0.2s ease;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 main a:hover {
   text-decoration: underline;
@@ -466,12 +466,20 @@ nav {
   .contenedor-noticias {
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .card-noticia {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 0;
+    height: 100%;
   }
-  .card-noticia {
-    width: 95%;
+  .card-noticia a {
+    margin-top: auto;
   }
   .card-noticia img {
     height: 100px;
