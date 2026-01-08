@@ -82,6 +82,10 @@
 /*adaptación tablet*/
 @media (max-width: $bp-tablet) {
 
+    h2 {
+        text-align: center;
+    }
+
     .actividades_inicio{
         img {
             @include size(75%, 75%);
