@@ -57,11 +57,11 @@ footer{
     /* FOOTER */
     .redes {
         justify-content: center;
-        gap: 15px;
+        gap: $sm;
 
         img {
-            width: 24px;
-            height: 24px;
+            width: $img-xs;
+            height: $img-xs;
         }
     }
 }

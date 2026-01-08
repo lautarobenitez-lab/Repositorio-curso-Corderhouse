@@ -9,11 +9,20 @@
 }
 
 /*nav lista en fila*/
-nav ul {
-    gap: $lg;
-    margin-top: $xs; /* espacio entre logo y menú */
-    padding: $xs;
-    font-weight: 1000
+nav{
+    ul {
+        gap: $lg;
+        margin-top: $xs; /* espacio entre logo y menú */
+        padding: $xs;
+        font-weight: 700;
+    }
+
+    /*nav con logo a la izquierda y lista a la derecha*/
+    .menuNav, .nav-link {
+        display: flex;
+        background-color: $header-color;
+        color: $primary-color;
+    }
 }
 
 /*nav columna*/
@@ -32,22 +41,25 @@ nav ul {
 @media (max-width: 800px){
 
     /*nav centrado*/
-    nav ul {
-        gap: $md;
-        margin-top: $xs; /* espacio entre logo y menú */
-        padding: $xs;
-        font-weight: 1000;
+    nav {
+        ul {
+            gap: $md;
+            margin-top: $xs; /* espacio entre logo y menú */
+            padding: $xs;
+            font-weight: 1000;
+        }
     }
 }
-
 
 /*adaptación mobile*/
 @media (max-width: 576px) {
 
     /* NAV */
-    nav ul {
-        flex-direction: column;
-        gap: $xs;
-        padding: 5px;
+    nav {
+        ul {
+            flex-direction: column;
+            gap: $xs;
+            padding: $xxs;
+        }
     }
 }

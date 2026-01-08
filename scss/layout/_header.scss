@@ -14,7 +14,7 @@ header a:focus-visible{
     justify-content: flex-start; 
     align-items: center;
     text-align: left;
-    gap: $xl;
+    gap: $sm;
 }
 
 /*logo imagen y texto alineados*/
@@ -40,7 +40,7 @@ header a:focus-visible{
     }
 
     .logo { 
-        margin: 5px;
+        margin: $xxs;
         justify-content: center;
 
         img {

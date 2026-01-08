@@ -2,8 +2,8 @@
 
 .forms{
     background-color: $secondary-color;
-    border: $primary-color 1px solid;
+    border: 1px solid $primary-color;
     color: $titulos-font-color;
-    font-size: 16px;
+    font-size: $md;
     cursor: pointer;
 }

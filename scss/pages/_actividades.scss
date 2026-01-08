@@ -12,18 +12,18 @@
         list-style: none; /*quita los puntos de las listas*/
         justify-content:center; /* centra horizontalmente */
         flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-        gap: 170px; /* espacio entre ellos */
+        gap: $xl; /* espacio entre ellos */
     }
 
     li{
         background-color: $secondary-color;
-        border: $secondary-color 5px solid;
+        border: $border-md solid $secondary-color;
     }
 
     img {
         width:$img-xxl;
         height:$img-xl;
-        border: $primary-color 5px solid;
+        border: $border-md solid $primary-color;
     }
 
     h3 {      /*títulos debajo de cada imagen*/
@@ -62,16 +62,11 @@
     .actividades{
         ul {
             flex-direction: column;
-            gap: 25px;
-        }
-        
-        li {          /* 1 tarjeta por fila */
-            width: 100%;
+            gap: $md;
         }
 
-        img {          /*que las imágenes se adapten al li*/
+        li {          /* 1 tarjeta por fila */
             width: 100%;
-            height: auto;
         }
     }
 }

@@ -1,35 +1,29 @@
 @use "../base/variables" as *;
 
 /*historia*/
-/*sede vieja tamaño de imagen*/
-#sedeVieja{
-    display: flex;
-    align-items: center;
-    gap: $xs; /* espacio entre la imagen y el texto */
 
-    img{
-        width: $img-xxxxl;
-        height: $img-xxxl;
-        padding: 0; /* espacio arriba y abajo */
-        border:$secondary-color 5px solid;
-    }
-}
 
 
 /*sede nueva tamaño de imagen*/
-#sedeNueva{
+#sedeNueva, #sedeVieja{
     display: flex;
-    justify-content: flex-end ; /* alinea a la derecha */
     align-items: center;
     gap: $xs; /* espacio entre la imagen y el texto */
 
     img{ 
         width: $img-xxxxl;
         height: $img-xxxl;
-        border: $secondary-color 5px solid;
+        border: $border-md solid $secondary-color;
     }
 }
 
+#sedeNueva{
+    justify-content: flex-end ; /* alinea a la derecha */
+}
+
+#sedeVieja{
+    justify-content: flex-start ; /* alinea a la derecha */
+}
 
 /*adaptación mobile*/
 @media (max-width: 576px) {
@@ -51,9 +45,9 @@
 
         p{
             max-width: 100%;
-            font-size: 0.95rem;
+            font-size: $sm;
             line-height: 1.6;
-            padding: 5px;
+            padding: $xxs;
         }
     }
 }
