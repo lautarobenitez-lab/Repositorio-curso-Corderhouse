@@ -6,4 +6,11 @@
     color: $titulos-font-color;
     font-size: $md;
     cursor: pointer;
+
+    transition: background-color 0.2s ease, transform 0.15s ease;
+
+    &:hover {
+        background-color: $header-color;
+        transform: translateY(-2px);
+    }
 }

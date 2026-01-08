@@ -27,6 +27,7 @@ main p { /*parrafos dentro del main*/
 main a { /*links dentro del main color negro y subrayado*/
   color: #000000;
   text-decoration: underline;
+  transition: color 2s ease, text-decoration-color 0.2s ease;
 }
 main a:hover {
   text-decoration: underline;
@@ -39,6 +40,11 @@ main a:hover {
   color: #D62828;
   font-size: 20px;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.forms:hover {
+  background-color: #c1121f;
+  transform: translateY(-2px);
 }
 
 .botonCentrado {
@@ -360,6 +366,10 @@ nav {
   height: 200px;
   object-fit: cover; /* recorta sin deformar */
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.actividades_inicio img:hover {
+  transform: scale(1.03);
 }
 .actividades_inicio a {
   display: flex;
@@ -397,6 +407,11 @@ nav {
   padding: 20px;
   background: #f5f5f5;
   border-radius: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-noticia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .card-noticia img {
   width: 100%;
