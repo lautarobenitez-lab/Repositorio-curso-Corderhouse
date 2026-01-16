@@ -67,10 +67,10 @@
             <li><a href="https://www.tiktok.com/@clubfilodramatico?_t=ZM-90iKxsIeaNA&_r=1" target="_blank">TikTok</a></li>
         </ul>
 
-        <h2>Correo electrónico</h2>
-        <a href="clubcayfa@gmail.com" target="_blank">clubcayfa@gmail.com</a>
+        <h3>Correo electrónico</h3>
+        <a href="mailto: clubcayfa@gmail.com" target="_blank">clubcayfa@gmail.com</a>
     
-        <h2>Whatsapp</h2>
+        <h3>Whatsapp</h3>
         <p>Para consultas rápidas, podés enviarnos un mensaje al siguiente número de WhatsApp: 
             <strong>54 9 3533476075</strong>. Estamos disponibles de lunes a viernes, de 08:00 a 13:00 horas.
         </p>
@@ -79,19 +79,19 @@
         <h2>Formulario de contacto</h2>
         <form class="formContacto" action="/submit" method="post">
             <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label><br>
-                <input type="text" id="name" name="name" required>
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="name" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com" required>
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea name= "mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-            <input class="forms" type="submit" value="Enviar">
+            <button class="forms" type="submit">Enviar</button>
         </form>
         
     </main>
