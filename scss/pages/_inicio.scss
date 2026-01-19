@@ -3,8 +3,9 @@
 
 /*inicio*/
 .actividades_inicio {
-    @include flex(center);
+    @include flex(center, stretch, row, $lg);
     padding: $md;
+    flex-wrap: wrap; 
 
     ul {                /*lista actividades en fila*/
         @include flex($gap: $lg);
