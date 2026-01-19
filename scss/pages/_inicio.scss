@@ -7,17 +7,15 @@
     padding: $md;
     flex-wrap: wrap; 
 
-    ul {                /*lista actividades en fila*/
-        @include flex($gap: $lg);
-        list-style: none; /*quita los puntos de las listas*/
-        padding: $md $xs; 
-    }
-
-    li {         /*estilo del listado. button y h3 centrados*/  
+    .actividad {
+        @include flex(flex-start, stretch, column, $sm);
         background-color: $secondary-color;
-        text-align: center; 
-        text-transform: uppercase;  
-        padding: $xs;
+        text-align: center;
+        text-transform: uppercase;
+        padding: $md;
+
+        width: calc(33.333% - #{$lg}); //  3 por fila
+        min-height: 340px;   
     }
 
     img {
@@ -34,11 +32,14 @@
     }
 
     a {
+        margin-top: auto;
         @include flex($align: center);
     }
 
     h3 {
         margin-top: $sm;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
@@ -67,6 +68,11 @@
     border-radius: $xs;
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    a {
+        margin-top: auto;
+        @include flex($align: center);
+    }
 
     &:hover {
         transform: translateY(-5px);

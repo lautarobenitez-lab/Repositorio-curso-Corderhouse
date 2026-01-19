@@ -349,25 +349,24 @@ nav {
 .actividades_inicio {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  padding: 20px;
-}
-.actividades_inicio ul { /*lista actividades en fila*/
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   flex-direction: row;
   gap: 40px;
-  list-style: none; /*quita los puntos de las listas*/
-  padding: 20px 10px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
-.actividades_inicio li { /*estilo del listado. button y h3 centrados*/
+.actividades_inicio .actividad {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 12px;
   background-color: #f5f5f5;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 20px;
+  width: calc(33.333% - 40px);
+  min-height: 340px;
 }
 .actividades_inicio img {
   width: 250px;
@@ -381,6 +380,7 @@ nav {
   transform: scale(1.03);
 }
 .actividades_inicio a {
+  margin-top: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -389,6 +389,8 @@ nav {
 }
 .actividades_inicio h3 {
   margin-top: 12px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .noticias {
@@ -417,6 +419,14 @@ nav {
   background: #f5f5f5;
   border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-noticia a {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
 }
 .card-noticia:hover {
   transform: translateY(-5px);
