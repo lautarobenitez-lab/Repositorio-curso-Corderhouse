@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/components/botones.scss","../../scss/base/_mixins.scss"],"names":[],"mappings":"AAEA;ECAE;EACA;EACA,aDDwB;ECExB,gBAJ4D;EAK5D,KALuE","file":"botones.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/components/botones.scss","../../scss/base/_mixins.scss","../../scss/base/_variables.scss"],"names":[],"mappings":"AAGA;EACI;ECFF;EACA,iBDEgB;ECDhB,aDCwB;ECAxB,gBAJ4D;EAK5D,KALuE;EDKrE;EACA,WEKC;EFJD;EAEA;;AAEA;EACI;;;AAKR;AAAA;EAEE","file":"botones.css"}

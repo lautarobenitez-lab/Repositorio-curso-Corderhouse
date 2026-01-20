@@ -5,24 +5,26 @@
 /*actividades*/
 /*lista actividades en bloque*/
 .actividades {
-    @include flex(center);
     padding: $md;
+    @include flex(center, $gap:$xl);
+    margin: $sm;
+    flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
 
-    ul {          /*lista actividades en fila*/
-        @include flex(center, $gap:$xl);
-        list-style: none; /*quita los puntos de las listas*/
-        flex-wrap: wrap;       /* permite que bajen a otra fila si no caben */
-    }
 
-    li{
+    .actividad{ 
         background-color: $secondary-color;
+        border-radius: $border-radius-md;
         border: $border-md solid $secondary-color;
         @include flex(center, center, column);
+        padding: $md;
+        width: calc(100% / 4);
+
     }
 
     img {
         @include size($img-xxl, $img-xl);
         border: $border-md solid $primary-color;
+        border-radius: $border-radius-md;
         object-fit: cover;     // recorta para llenar sin deformar
         object-position: center; // centra la parte importante
     }

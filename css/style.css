@@ -57,11 +57,24 @@ main a:hover {
 }
 
 .botonCentrado {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 0;
+  border: 1px solid #000000;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.botonCentrado:hover {
+  transform: translateY(-2px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
 }
 
 /*footer*/
@@ -234,35 +247,32 @@ nav {
 /*actividades*/
 /*lista actividades en bloque*/
 .actividades {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
   padding: 20px;
-}
-.actividades ul { /*lista actividades en fila*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 140px;
-  list-style: none; /*quita los puntos de las listas*/
+  margin: 12px;
   flex-wrap: wrap; /* permite que bajen a otra fila si no caben */
 }
-.actividades li {
+.actividades .actividad {
   background-color: #f5f5f5;
+  border-radius: 10px;
   border: 5px solid #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 0;
+  padding: 20px;
+  width: 25%;
 }
 .actividades img {
   width: 250px;
   height: 200px;
   border: 5px solid #ffffff;
+  border-radius: 10px;
   object-fit: cover;
   object-position: center;
 }
@@ -297,26 +307,60 @@ nav {
   }
 }
 /*historia*/
-/*sede nueva tamaño de imagen*/
-#sedeNueva, #sedeVieja {
+/*estilos main historia*/
+main h1 {
+  text-align: center;
+  margin-bottom: 140px;
+  color: #D62828;
+}
+
+/*sede vieja y sede nueva*/
+#sedeVieja {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 140px;
+  padding: 40px;
 }
-#sedeNueva img, #sedeVieja img {
-  width: 400px;
-  height: 300px;
-  border: 5px solid #f5f5f5;
+#sedeVieja img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+#sedeVieja .historia-texto {
+  max-width: 750px;
+}
+#sedeVieja .historia-texto h2 {
+  color: #D62828;
+  margin-bottom: 12px;
 }
 
 #sedeNueva {
-  justify-content: flex-end; /* alinea a la derecha */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px;
+}
+#sedeNueva img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
 }
 
-#sedeVieja {
-  justify-content: flex-start; /* alinea a la derecha */
+/* contenido historia */
+.historia-contenido {
+  max-width: 750px;
+}
+.historia-contenido article {
+  margin-bottom: 20px;
+}
+.historia-contenido article h2 {
+  color: #D62828;
+  margin-bottom: 10px;
 }
 
 /*adaptación mobile*/
@@ -344,6 +388,22 @@ nav {
     line-height: 1.6;
     padding: 5px;
   }
+  .historia-texto,
+  #sedeNueva article {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+@media (max-width: 800px) {
+  .historia-texto,
+  #sedeNueva article {
+    max-width: 560px;
+  }
+  #sedeVieja img,
+  #sedeNueva img {
+    width: 320px;
+    height: auto;
+  }
 }
 /*inicio*/
 .actividades_inicio {
@@ -352,27 +412,24 @@ nav {
   align-items: stretch;
   flex-direction: row;
   gap: 40px;
-  padding: 20px;
-  flex-wrap: wrap;
+  padding: 40px;
 }
 .actividades_inicio .actividad {
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   gap: 12px;
-  background-color: #f5f5f5;
   text-align: center;
-  text-transform: uppercase;
+  background-color: #f5f5f5;
+  border-radius: 10px;
   padding: 20px;
-  width: calc(33.333% - 40px);
-  min-height: 340px;
+  width: 33.3333333333%;
 }
 .actividades_inicio img {
   width: 250px;
   height: 200px;
   object-fit: cover; /* recorta sin deformar */
-  object-position: center;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -381,15 +438,11 @@ nav {
 }
 .actividades_inicio a {
   margin-top: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
 }
 .actividades_inicio h3 {
   margin-top: 12px;
   text-transform: uppercase;
+  color: titulos-font-color;
   text-align: center;
 }
 

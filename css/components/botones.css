@@ -1,9 +1,22 @@
 .botonCentrado {
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 0;
+  border: 1px solid #000000;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.botonCentrado:hover {
+  transform: translateY(-2px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
 }
 
 /*# sourceMappingURL=botones.css.map */

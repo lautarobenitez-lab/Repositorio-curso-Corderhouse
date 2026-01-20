@@ -4,24 +4,23 @@
 /*inicio*/
 .actividades_inicio {
     @include flex(center, stretch, row, $lg);
-    padding: $md;
-    flex-wrap: wrap; 
+    padding: $lg;
 
     .actividad {
-        @include flex(flex-start, stretch, column, $sm);
-        background-color: $secondary-color;
+        @include flex(space-between, center, column, $sm);
+
         text-align: center;
-        text-transform: uppercase;
+
+        background-color: $secondary-color;
+        border-radius: $border-radius-md;
         padding: $md;
 
-        width: calc(33.333% - #{$lg}); //  3 por fila
-        min-height: 340px;   
+        width: calc(100% / 3);
     }
 
     img {
         @include size($img-xxl, $img-xl);
         object-fit: cover;  /* recorta sin deformar */
-        object-position: center; // centra la parte importante
         border-radius: $border-radius-md;
 
         transition: transform 0.3s ease;
@@ -33,12 +32,12 @@
 
     a {
         margin-top: auto;
-        @include flex($align: center);
     }
 
     h3 {
         margin-top: $sm;
         text-transform: uppercase;
+        color: titulos-font-color;
         text-align: center;
     }
 }
