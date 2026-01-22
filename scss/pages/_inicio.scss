@@ -16,6 +16,7 @@
         padding: $md;
 
         width: calc(100% / 3);
+        height: 100%;
     }
 
     img {
@@ -95,7 +96,7 @@
 
     .actividades_inicio{
         img {
-            @include size(75%, 75%);
+            @include size($img-lg, $img-lg);
         }
     }
 

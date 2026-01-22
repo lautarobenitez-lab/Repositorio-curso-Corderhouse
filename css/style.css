@@ -450,6 +450,7 @@ main h1 {
   border-radius: 10px;
   padding: 20px;
   width: 33.3333333333%;
+  height: 100%;
 }
 .actividades_inicio img {
   width: 250px;
@@ -529,8 +530,8 @@ main h1 {
 /*adaptación tablet*/
 @media (max-width: 800px) {
   .actividades_inicio img {
-    width: 75%;
-    height: 75%;
+    width: 100px;
+    height: 100px;
   }
   .contenedor-noticias {
     justify-content: center;
