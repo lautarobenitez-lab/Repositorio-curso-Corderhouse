@@ -6,7 +6,7 @@
     @include flex(center, stretch, row, $lg);
     padding: $lg;
 
-    .actividad {
+    .actividad_inicio {
         @include flex(space-between, center, column, $sm);
 
         text-align: center;
@@ -61,6 +61,9 @@
 
 /*tarjetas de noticias*/
 .card-noticia {
+    @include size($img-xxxl, $img-big);
+    height: 520px; // ajustá a ojo
+    @include flex(flex-start, stretch, column, $sm);
     width: $img-xxxl;
     padding: $md;
     background: $secondary-color;
@@ -93,14 +96,6 @@
         img {
             @include size(75%, 75%);
         }
-
-        ul {
-            @include flex(center, $gap: $mdg);
-    
-            li:nth-child(3) {
-                display: none; /* Oculto la tercera */
-            }
-        }
     }
 
     .contenedor-noticias {
@@ -108,7 +103,8 @@
     }
 
     .card-noticia {
-        width: 90%;
+        @include size(70%, 100%);
+
     }
 }
 
@@ -122,14 +118,11 @@
             @include size(100%, auto);
         }
 
-        ul {
-            flex-direction: column;
-            gap: $md;
-    
-
-            li:nth-child(3) {
+        .actividad_inicio {
+            width: 100%;
+        }
+        .actividad_inicio:nth-child(3) {
             display: none;
-            }
         }
     }
 
@@ -140,7 +133,7 @@
 
     .card-noticia {
         @include flex($direction: column);
-        height: 100%;
+        @include size(80%, 100%);
 
         a  {
             margin-top: auto;

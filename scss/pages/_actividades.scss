@@ -42,16 +42,18 @@
 
     /*actividades*/
     .actividades{ 
-        ul {
-            gap: $lg;
-        }
+        @include flex(center, stretch, row, $xl);
+        width: 100%;   
+        flex-wrap: wrap;
 
-        li {          /* 2 tarjetas por fila */
-            width: 45%;
-        }
-
-
+        .actividad {
+            @include flex(flex-start, center, column, $sm); // card en columna
+             gap: $md;
+            width: calc(50% - ($xl / 2)); // dos por fila con espacio
+            height: 100%; // CLAVE para el sombreado
+        }   
     }
+
 }
 
 
@@ -60,12 +62,14 @@
 
     /* ACTIVIDADES */
     .actividades{
-        ul {
-            @include flex($direction: column, $gap: $md);
-        }
+        @include flex(center, stretch, column, $md);
+        width: 100%;
 
-        li {          /* 1 tarjeta por fila */
+        .actividad {
             width: 100%;
         }
+
     }
+
+    
 }

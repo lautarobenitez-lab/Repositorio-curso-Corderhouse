@@ -285,24 +285,38 @@ nav {
 /*adaptación tablet*/
 @media (max-width: 800px) {
   /*actividades*/
-  .actividades ul {
-    gap: 40px;
+  .actividades {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 140px;
+    width: 100%;
+    flex-wrap: wrap;
   }
-  .actividades li { /* 2 tarjetas por fila */
-    width: 45%;
+  .actividades .actividad {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    gap: 20px;
+    width: calc(50% - 70px);
+    height: 100%;
   }
 }
 /*adaptación mobile*/
 @media (max-width: 576px) {
   /* ACTIVIDADES */
-  .actividades ul {
+  .actividades {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
-  .actividades li { /* 1 tarjeta por fila */
+  .actividades .actividad {
     width: 100%;
   }
 }
@@ -414,7 +428,7 @@ main h1 {
   gap: 40px;
   padding: 40px;
 }
-.actividades_inicio .actividad {
+.actividades_inicio .actividad_inicio {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -468,6 +482,14 @@ main h1 {
 /*tarjetas de noticias*/
 .card-noticia {
   width: 300px;
+  height: 500px;
+  height: 520px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 12px;
+  width: 300px;
   padding: 20px;
   background: #f5f5f5;
   border-radius: 10px;
@@ -498,21 +520,12 @@ main h1 {
     width: 75%;
     height: 75%;
   }
-  .actividades_inicio ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .actividades_inicio ul li:nth-child(3) {
-    display: none; /* Oculto la tercera */
-  }
   .contenedor-noticias {
     justify-content: center;
   }
   .card-noticia {
-    width: 90%;
+    width: 70%;
+    height: 100%;
   }
 }
 /*adaptación mobile*/
@@ -522,11 +535,10 @@ main h1 {
     width: 100%;
     height: auto;
   }
-  .actividades_inicio ul {
-    flex-direction: column;
-    gap: 20px;
+  .actividades_inicio .actividad_inicio {
+    width: 100%;
   }
-  .actividades_inicio ul li:nth-child(3) {
+  .actividades_inicio .actividad_inicio:nth-child(3) {
     display: none;
   }
   /* NOTICIAS */
@@ -543,6 +555,7 @@ main h1 {
     align-items: center;
     flex-direction: column;
     gap: 0;
+    width: 80%;
     height: 100%;
   }
   .card-noticia a {
