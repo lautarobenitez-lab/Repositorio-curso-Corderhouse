@@ -18,11 +18,18 @@ footer{
 
 /*estilo redes sociales en el footer*/
 .redes {
-    @include flex(end, center, row, $md);
+    @include flex(flex-end, center, row, $md);
     padding: $xs;
 
     img {             /*iconos de redes sociales tamaño*/
         @include size($img-sm, $img-sm);
+    }
+
+    .escudo_footer {
+        margin-right: auto;
+        img {           /*icono escudo tamaño*/
+            @include size($img-lg, $img-lg);
+        }
     }
 }
 
@@ -38,7 +45,13 @@ footer{
         img {           /*iconos de redes sociales tamaño*/
             @include size($img-xs, $img-xs);
         }
-    }   
+
+        .escudo_footer {
+            img {           /*icono escudo tamaño*/
+                @include size($img-md, $img-md);
+            }
+        }   
+    }
 }
 
 

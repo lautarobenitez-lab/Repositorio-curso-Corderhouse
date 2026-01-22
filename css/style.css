@@ -96,7 +96,7 @@ footer form {
 /*estilo redes sociales en el footer*/
 .redes {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   gap: 20px;
@@ -105,6 +105,13 @@ footer form {
 .redes img { /*iconos de redes sociales tamaño*/
   width: 30px;
   height: 30px;
+}
+.redes .escudo_footer {
+  margin-right: auto;
+}
+.redes .escudo_footer img { /*icono escudo tamaño*/
+  width: 100px;
+  height: 100px;
 }
 
 /*adaptación tablet*/
@@ -121,6 +128,10 @@ footer form {
   .redes img { /*iconos de redes sociales tamaño*/
     width: 20px;
     height: 20px;
+  }
+  .redes .escudo_footer img { /*icono escudo tamaño*/
+    width: 50px;
+    height: 50px;
   }
 }
 /*adaptación mobile*/
